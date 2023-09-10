@@ -1,0 +1,24 @@
+<!-- initial landing page -->
+
+<div>
+    <div class="appMenuBg row">
+      <div class="appBg">
+        <div class="row heading1Font adjustHeading headerMargin">
+          Gutenberg Project
+        </div>
+        <div class="row bodyFont adjustHeading mb2">
+          A social cataloging website that allows you to freely search its database of books, annotations, and reviews.
+        </div>
+      </div>
+      
+      <div class="adjustMenu">
+        <!-- genre card component -->
+        <app-app-cat-cmp
+              *ngFor="let component of componentArray"
+              [componentImage]="component.img"
+              [componentName]= component.name>
+        </app-app-cat-cmp>
+      </div>
+    </div>
+  
+  </div>

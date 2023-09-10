@@ -1,0 +1,5 @@
+<div>
+    <img [src]="bookCover" alt="Book image" class="bookCover" (click)="goToLink()" [tooltip]="bookTitle">
+    <div class="bookFont">{{ bookTitle | truncate:27  | uppercase}}</div>
+    <div class="bookAuthor" [tooltip]="bookAuthor">{{bookAuthor | truncate:16 }}</div>
+</div>

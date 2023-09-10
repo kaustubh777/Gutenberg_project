@@ -1,0 +1,66 @@
+/* You can add global styles to this file, and also import other style files */
+
+*{
+    font-family: 'montserrat',sans-serif !important;
+    max-width: 100%;
+    overflow-x: hidden;
+    
+}
+
+@font-face{
+    font-family: 'montserrat';
+    src: url('assets/fonts/Montserrat/Montserrat-Regular.ttf');
+}
+
+@font-face{
+    font-family: 'montserrat-semibold';
+    src: url('assets/fonts/Montserrat/Montserrat-SemiBold.ttf');
+}
+
+.heading1Font{
+    font-family: 'montserrat-semibold' !important;
+    font-size: 48px;
+    color: #5E56E7;
+}
+
+.customHeading1Font{
+    font-size: 48px;
+    font-weight: 600;
+    color: #5E56E7;
+}
+.heading2Font{
+    font-family: 'montserrat-semibold' !important;
+    font-size: 30px;
+    color: #5E56E7;
+    font-weight: 600;
+}
+
+.bodyFont{
+    font-size: 16px;
+    color: #333333;
+    font-weight: 600;
+}
+
+.searchFont{
+    font-size: 16px;
+    color: #333333;
+    font-weight: 600;
+}
+
+.genreFont{
+    font-size: 20px;
+    color: #333333;
+    font-weight: 600;
+}
+
+.bookFont{
+    font-size: 12px;
+    color: #333333;
+    font-weight:600;
+}
+
+.bookAuthor{
+    font-size: 12px;
+    color: #A0A0A0; 
+    font-weight:600;
+}

@@ -1,0 +1,51 @@
+.buttonAdjust{
+    display: inline;
+}
+.buttonSetting{
+    margin-right: 5vw;
+    margin-bottom: 4vh;
+    width: 380px;
+    border: none;
+    height: 50px;
+    background-color: white;
+    box-shadow: 0 2px 5px 0 rgb(211 209 238 / 50%);
+    border-radius: 4px;
+    position: relative;
+    text-align: left;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.buttonIcon{
+    width: 25px;
+    height:25px;
+    border: none;
+    position: absolute;
+    top: 12px;
+    left: 10px;
+}
+.buttonArrow{
+    position: absolute;
+    width: 19px;
+    height: 18px;
+    top: 16px;
+    right: 7px;
+}
+.genreFont{
+    margin-left: 3vw;
+    margin-right: 2.7vw;
+}
+
+@media only screen and (max-width: 800px) and (min-width:600px){
+    .genreFont{
+        margin-left: 5vw;
+    }
+}
+
+@media only screen and (max-width:600px) and (min-width:0px){
+    .buttonSetting{
+        margin-bottom: 2.5vh;
+    }
+    .genreFont{
+        margin-left: 10vw;
+    }
+}

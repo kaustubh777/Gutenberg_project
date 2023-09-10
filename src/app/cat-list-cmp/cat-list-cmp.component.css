@@ -1,0 +1,64 @@
+.appBg{
+    background-image: url('src/assets/images/Pattern.svg');
+    width: 100vw;
+    height: 30vh;
+    padding-top:9vh;
+    overflow-y: hidden
+}
+.appMenuBg{
+    background-color: #F8F7FF;
+    width: 100vw;
+    height: 100vh;
+    margin: 0px;
+}
+.adjustHeading{
+    margin: 1vh 27vw 1vh 16vw;
+}
+.adjustMenu{
+    margin: 9vh 16vw 1vh 16vw;
+}
+
+@media only screen and (max-width: 1300px) and (min-width:1000px){
+    .adjustHeading{
+        margin: 1vh 7vw 1vh 7vw;
+    }
+    .adjustMenu{
+        margin:9vh 7vw 1vh 7vw;
+    }
+}
+
+@media only screen and (max-width: 800px) and (min-width:600px){
+    .appBg{
+        padding-top: 2vh
+    }
+}
+
+@media only screen and (max-width: 600px) and (min-width:450px){
+    .adjustHeading{
+        margin: 1vh 11vw 0vh 11vw;
+    }
+    .heading1Font{
+        font-size:37px;
+    }
+    .appBg{
+        padding-top: 12vh
+    }
+    .adjustMenu{
+        margin:3vh 10vw 0vh 10vw;
+    }
+}
+
+@media only screen and (max-width: 450px) and (min-width:0px){
+    .adjustHeading{
+        margin: 1vh 8vw 0vh 8vw;
+    }
+    .heading1Font{
+        font-size:37px;
+    }
+    .appBg{
+        padding-top: 5vh;
+    }
+    .adjustMenu{
+        margin:3vh 10vw 0vh 10vw;
+    }
+}

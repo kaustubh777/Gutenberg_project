@@ -1,0 +1,40 @@
+.bookCover{
+    margin-top: 4.5vh;
+    width: 114px;
+    height: 162px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px 0 rgba(211, 209, 238, 0.5);
+    cursor: pointer;
+    margin-left: 5px;
+    margin-right:5px;
+    margin-bottom: 5px
+}
+
+.bookFont{
+    margin:5px;
+    height: 5vh;
+    overflow-y: hidden;
+    cursor: default;
+}
+
+.bookAuthor{
+    margin:5px;
+    height: 3vh;
+    overflow-y: hidden;
+    cursor: default;
+
+}
+
+@media only screen and (min-width:550px){
+    .bookFont{
+        height: 6vh;
+        width: 15vw;
+    }
+}
+
+@media only screen and (min-width:0px) and (max-width:550px){
+    .bookFont{
+        height: 6vh;
+        width: 24vw;
+    }
+}

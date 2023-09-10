@@ -1,0 +1,21 @@
+<!-- secondary landing page -->
+<div>
+    <div class="catBg">
+        <div class="row">
+        <span class="backArrow col-xs-3" (click)="goBack()"></span>
+        <div class="col-xs-9 heading2Font">{{categoryName}}</div>
+        </div>
+        <div class="row">
+            <input type="text" class="styleInput searchFont" (keyup)="filterData()" [(ngModel)]="searchText" placeholder="Search" >
+            <div class="searchIcon"></div>
+            <div *ngIf="searchText != ''" class="closeIcon" (click)="clearInput()"></div>
+        </div>
+    </div>
+        <div class="catBookBg" appScroll>
+            <div class="row" *ngIf="!isFiltering">
+            <app-single-book-cmp class="col-xs-4 col-sm-3 col-md-2"  *ngFor="let book of booksArray; let i = index" [bookCover] = "book.formats['image/jpeg']" [bookTitle]="book.title" [bookAuthor]="book.authors[0] ? book.authors[0].name : 'Unknown Author'" [bookLink] = getLink(book.formats) ></app-single-book-cmp>
+            </div>
+            <app-spinner *ngIf="(isProcessing || isFiltering) && !bookListEnd" class="adjustSpinner"></app-spinner>
+            <div class="row bookFont listEnd" *ngIf="bookListEnd">{{"No more books in this category" | uppercase}}</div>
+        </div>
+</div>

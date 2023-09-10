@@ -1,0 +1,137 @@
+.catBg{
+    width: 100vw;
+    height: 30vh;
+    background-color: white;
+    padding-left: 18vw;
+    padding-right: 18vw;
+    padding-top: 12vh;
+}
+
+.catBookBg{
+    background-color: #F0F0F6;
+    width: 100vw;
+    height: 70vh;
+    padding-left:17vw;
+    padding-right:17vw;
+}
+
+.backArrow{
+    background-image: url('src/assets/images/Back.svg');
+    margin-top: 1vh;
+    width: 24px;
+    height: 24px;
+    padding: 0pc !important;
+    cursor: pointer;
+}
+.row{
+    margin-left:0px;
+    margin-right: 0px;
+    position: relative;
+    margin-top:1vh;
+}
+.styleInput{
+    width: 100vw;
+    height: 40px;
+    background-color: #F0F0F6;
+    border: none;
+    border-radius: 5px;
+    padding-left: 3vw;
+    padding-right: 3vw;
+}
+.searchIcon{
+    background-image: url('src/assets/images/Search.svg');
+    width: 16px;
+    height:16px;
+    position: absolute;
+    top: 30%;
+    left: 0.6vw;
+}
+.closeIcon{
+    background-image: url('src/assets/images/Cancel.svg');
+    width: 12px;
+    height:12px;
+    position: absolute;
+    top: 35%;
+    right: 1vw;
+    cursor:pointer;
+}
+input:focus{
+    outline: none;
+    border: 1px solid #5E56E7;
+}
+.listEnd{
+    left: 30vw;
+    margin-top: 3vh;
+    margin-bottom:3vh;
+}
+
+
+@media only screen and (min-width:1110px) and (max-width:1350px){
+    .catBookBg{
+        padding-left: 10vw;
+        padding-right: 10vw;
+    }
+    .catBg{
+        padding-left: 12vw;
+        padding-right: 12vw;
+    }
+    .adjustSpinner{
+        padding-left: 10%
+    }
+}
+
+@media only screen and (min-width:760px) and (max-width:1110px){
+    .catBookBg{
+        padding-left: 5vw;
+        padding-right: 5vw;
+    }
+    .catBg{
+        padding-left: 7vw;
+        padding-right: 7vw;
+    }
+    .adjustSpinner{
+        padding-left: 10%
+    }
+}
+
+@media only screen and (min-width:500px) and (max-width:760px){
+    .catBookBg{
+        padding-left: 8vw;
+        padding-right: 2vw;
+    }
+    .catBg{
+        padding-left: 10vw;
+        padding-right: 7vw;
+    }
+    .adjustSpinner{
+        padding-left: 10%
+    }
+    .styleInput{
+        padding-left: 5vw;
+    }
+}
+
+@media only screen and (min-width:0px) and (max-width:500px){
+    .catBookBg{
+        padding-left: 2vw;
+        padding-right: 2vw;
+    }
+    .catBg{
+        padding-left: 7vw;
+        padding-right: 7vw;
+    }
+    .adjustSpinner{
+        padding-left: 10%
+    }
+    .styleInput{
+        padding-left: 5vw;
+    }
+    .col-xs-4{
+        padding-right:0px;
+        padding-left:0px;
+    }
+}
+
+
+
+

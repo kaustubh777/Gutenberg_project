@@ -1,0 +1,8 @@
+<!-- individual genre buttons and icons component -->
+<div class="buttonAdjust">
+    <button class="buttonSetting  col-lg-6 col-sm-12" (click)="goToselectedCategory()">
+     <div class="buttonIcon" [ngStyle]="{background: 'url('+componentImage+')'}"></div>
+     <span class="genreFont">{{componentName | uppercase}}</span>
+    <div class="buttonArrow" [ngStyle]="{background: 'url('+componentArrow+')'}"></div>
+    </button>
+</div>
