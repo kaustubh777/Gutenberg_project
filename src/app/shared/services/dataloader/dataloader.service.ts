@@ -8,7 +8,7 @@ import { tap } from 'rxjs/operators';
 export class DataloaderService {
   nextURL;
   requestObj;
-  baseUrl = ' https://gutendex.com/books/?mime_type=image';
+  baseUrl = 'https://gutendex.com/books/?mime_type=image';
   constructor(public http:HttpClient) { }
 
   getBooks( filter:string, initial:boolean,category:string,) {
