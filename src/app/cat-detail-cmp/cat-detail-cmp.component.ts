@@ -56,6 +56,8 @@ export class CatDetailCmpComponent implements OnInit {
           this.bookListEnd = true;
         if(!!this.isFiltering)
           this.isFiltering = !this.isFiltering;
+      },(err) => {
+        this.isProcessing = false;
       }
     )
   }
@@ -71,6 +73,8 @@ export class CatDetailCmpComponent implements OnInit {
             this.isFiltering = false;
             if(response['next'] == null)
               this.bookListEnd = true;
+          },(err) => {
+            this.isProcessing = false;
           }
         )
       },1500);
